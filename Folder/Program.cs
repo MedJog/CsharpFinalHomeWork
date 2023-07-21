@@ -14,8 +14,22 @@ void PrintArray(string[] array)
             Console.Write($"{array[i]}  ");
         }
 }
+void NewArray(string[] array)
+{  
+    string[] new_array = new string [array.Length];
+    for (int i = 0; i < array.Length; i++)
+        {
+            if (array[i].Length <= 3)
+                {
+                    new_array[i] = array[i];
+                    Console.Write($"{new_array[i]}   ");
+                }
+        }
+}
 
 
 string[] words = {"Hello", "12", "Programs", "Yes", "))))", "!!", ":-)", "3", "No", "987"};
 PrintArray(words);
+Console.WriteLine();
+NewArray(words);
 
