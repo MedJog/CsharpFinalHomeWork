@@ -7,3 +7,15 @@
 //[“1234”, “1567”, “-2”, “computer science”] → [“-2”]
 //[“Russia”, “Denmark”, “Kazan”] → []
 
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+        {
+            Console.Write($"{array[i]}  ");
+        }
+}
+
+
+string[] words = {"Hello", "12", "Programs", "Yes", "))))", "!!", ":-)", "3", "No", "987"};
+PrintArray(words);
+
